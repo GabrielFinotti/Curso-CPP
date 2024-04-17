@@ -18,7 +18,7 @@ int multi(int numb1, int numb2)
 
 float divs(int numb1, int numb2)
 {
-	return numb1 / numb2;
+	return (float)numb1 / (float)numb2;
 }
 
 int pot(int numb1, int numb2)
