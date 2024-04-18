@@ -8,6 +8,7 @@ int main()
 	int& Ref = number;
 
 	std::cout << "Valor de número usando Ref: " << Ref << "\n";
+	std::cout << "Endereço de memória da Ref: " << &Ref << std::endl;
 
 	system("pause");
 
