@@ -4,7 +4,7 @@ int main()
 {
 	setlocale(LC_ALL, "portuguese");
 
-	float notas[5];
+	float notas[5]{ 0 };
 	float media, soma{ 0.0f };
 	std::string aluno;
 
