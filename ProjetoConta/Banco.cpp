@@ -4,7 +4,7 @@ int main()
 {
 	setlocale(0, "portuguese");
 
-	conta Conta01;
+	conta Conta01("Itau", 2222, 5555, "Junin", 20000);
 	conta Conta02;
 
 	std::cout << "Endereço de memória objeto conta01: " << &Conta01 << "\n";

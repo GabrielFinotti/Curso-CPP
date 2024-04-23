@@ -8,9 +8,11 @@ private:
 	int agencia;
 	int numConta;
 	std::string titular;
-	double saldo{ 0.0 };
+	double saldo;
 
 public:
+	conta();
+	conta(std::string banco, int agencia, int numConta, std::string titular, double saldo);
 	bool sacar(double);
 	void depositar(double);
 	void transferir(conta&, double);

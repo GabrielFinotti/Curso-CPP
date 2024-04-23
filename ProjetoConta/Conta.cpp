@@ -1,5 +1,23 @@
 #include "Conta.h"
 
+conta::conta()
+{
+	banco = "";
+	agencia = 0;
+	numConta = 0;
+	titular = "";
+	saldo = 0.0;
+}
+
+conta::conta(std::string banco, int agencia, int numConta, std::string titular, double saldo)
+{
+	this->banco = banco;
+	this->agencia = agencia;
+	this->numConta = numConta;
+	this->titular = titular;
+	this->saldo = saldo;
+}
+
 bool conta::sacar(double valor)
 {
 	if (saldo < valor)
