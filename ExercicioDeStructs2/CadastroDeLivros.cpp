@@ -1,8 +1,11 @@
 #include "Livro.h"
+#include <Windows.h>
 
 int main()
 {
 	setlocale(0, "portuguese");
+	unsigned PaginaCodigoAtual = GetConsoleOutputCP();
+	system("chp 1252 > null");
 
 	Livro livro;
 
@@ -27,6 +30,7 @@ int main()
 
 	std::cout << livro.getDataLivros();
 
+	SetConsoleOutputCP(PaginaCodigoAtual);
 	system("pause");
 
 	return 0;
