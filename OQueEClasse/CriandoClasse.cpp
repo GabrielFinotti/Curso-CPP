@@ -19,12 +19,16 @@ int main()
 	setlocale(0, "portuguese");
 
 	Casa casaDePraia;
+
 	std::cout << "Tamanho da casa: "; 
 	casaDePraia.showSize();
 	std::cout << "\n";
 
 	std::cout << "Quantidade de quartos: " << casaDePraia.obterNumQuartos() << "\n";
-	std::cout << "Tem suite? " << casaDePraia.TemSuite() ? std::cout << "Sim" : std::cout << "Não";
+
+	std::cout << "Tem suite? ";
+	casaDePraia.TemSuite() ? std::cout << "Sim" : std::cout << "Não";
+
 	casaDePraia.setNumQuartos(3);
 	std::cout << std::endl;
 
@@ -56,6 +60,6 @@ void Casa::setNumQuartos(int num)
 	}
 	else
 	{
-		std::cout << "\nNúmero de quartos inválidos!";
+		std::cout << "Número de quartos inválidos!";
 	}
 }
