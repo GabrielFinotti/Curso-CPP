@@ -13,6 +13,7 @@ private:
 public:
 	conta();
 	conta(std::string banco, int agencia, int numConta, std::string titular, double saldo);
+	~conta();
 	bool sacar(double);
 	void depositar(double);
 	void transferir(conta&, double);

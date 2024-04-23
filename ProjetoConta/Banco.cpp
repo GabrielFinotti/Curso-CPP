@@ -4,6 +4,8 @@ int main()
 {
 	setlocale(0, "portuguese");
 
+	conta Cliente00;
+
 	conta Conta01("Itau", 2222, 5555, "Junin", 20000);
 	conta Conta02;
 

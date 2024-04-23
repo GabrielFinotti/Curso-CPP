@@ -7,6 +7,8 @@ conta::conta()
 	numConta = 0;
 	titular = "";
 	saldo = 0.0;
+
+	std::cout << "\Construtor Objeto Endereço: " << this << " executado!\n";
 }
 
 conta::conta(std::string banco, int agencia, int numConta, std::string titular, double saldo)
@@ -16,6 +18,13 @@ conta::conta(std::string banco, int agencia, int numConta, std::string titular, 
 	this->numConta = numConta;
 	this->titular = titular;
 	this->saldo = saldo;
+
+	std::cout << "\Construtor Objeto Endereço: " << this << " executado!\n";
+}
+
+conta::~conta()
+{
+	std::cout << "\nDestrutor Objeto Endereço: " << this << " executado!\n";
 }
 
 bool conta::sacar(double valor)
