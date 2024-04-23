@@ -72,6 +72,11 @@ std::string conta::getTitular()
 	return titular;
 }
 
+void conta::getEnderecoThis()
+{
+	std::cout << "\nthis contém dentro o endereço: " << this << "\n";
+}
+
 void conta::setBanco(std::string banco)
 {
 	this->banco = banco;

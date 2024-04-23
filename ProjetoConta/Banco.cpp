@@ -7,6 +7,9 @@ int main()
 	conta Conta01;
 	conta Conta02;
 
+	std::cout << "Endereço de memória objeto conta01: " << &Conta01 << "\n";
+	std::cout << "Endereço de memória objeto conta01: " << &Conta02 << "\n";
+
 	Conta01.setBanco("Bradesco");
 	Conta01.setAgencia(1234);
 	Conta01.setNumConta(1227);

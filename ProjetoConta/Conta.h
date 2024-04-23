@@ -19,6 +19,7 @@ public:
 	int getAgencia();
 	int getNumConta();
 	std::string getTitular();
+	void getEnderecoThis();
 	void setBanco(std::string);
 	void setAgencia(int);
 	void setTitular(std::string);
